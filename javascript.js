@@ -1,9 +1,17 @@
-var words = ["Rock", "Paper", "Scisors"];
+let words = ["Rock", "Paper", "Scisors"];
 
-function randomWord(arr) {
-    return arr[Math.floor(Math.random() * arr.length)];
-
+function computerPlay(arr) {
+    return arr[Math.floor(Math.random() * words.length)];
+    console.log(computerPlay(words));
 }
 
-for (var x=0; x<20; x++)
-    console.log(randomWord(words))
+
+    
+
+function playerSelection(arr) {
+    return arr[Math.floor(Math.random() * words.length)];
+    }
+    
+for (let x=0; x<1; x++)
+    console.log(playerSelection(words));
+
