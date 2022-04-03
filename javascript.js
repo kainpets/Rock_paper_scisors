@@ -4,6 +4,8 @@ function playRound(playerSelection, computerSelection) {
     const messageToPlayer = `Computer chose ${computerSelection}, you chose ${playerSelection}`;
     console.log(messageToPlayer);
 
+    // logika się zgadza, musisz pamiętać, że powyższe parametry tej funkcji to po prostu inne funkcje, które 
+    // tam umieszczasz wywołując tę funkcję - w linii 51
     if (playerSelection === "rock" && computerSelection === "scissors") {
         console.log("You won! rock beats scissors!");
     } else if (playerSelection === "rock" && computerSelection === "paper"){
