@@ -1,4 +1,8 @@
-let words = ["Rock", "Paper", "Scisors"];
+var words = ["Rock", "Paper", "Scisors"];
+
+//function computerPlay(arr) {
+//    return arr[Math.floor(Math.random() * words.length)];
+//}
 
 function computerPlay(arr) {
     return arr[Math.floor(Math.random() * words.length)];
@@ -6,10 +10,12 @@ function computerPlay(arr) {
 
 console.log(computerPlay(words));
 
-function playRound(arr) {
-    var playerSelection = arr[Math.floor(Math.random() * words.length)];
+function playRound(playerSelection, computerSelection) {
+    var playerNumber = [Math.floor(Math.random() * 3)];
+    var playerSelection = words[playerNumber];
     console.log(playerSelection);
-    var computerSelection = arr[Math.floor(Math.random() * words.length)];
+    var computerNumber = [Math.floor(Math.random() * 3)];
+    var computerSelection = words[computerNumber]
     console.log(computerSelection);
     
     if (playerSelection === "Rock" && computerSelection === "Scisors") {
@@ -34,6 +40,9 @@ function playRound(arr) {
  
 }
 
-
-
 console.log(playRound(words));
+
+const playerSelection = "Rock";
+const computerSelection = computerPlay();
+console.log(playRound(playerSelection, computerSelection));
+
